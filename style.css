@@ -3,12 +3,16 @@
 * {
     padding: 0;
     margin: 0;
-     font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
 }
 
 .main {
     background-image: url(assets/images/bg.jpg);
-    height: 80vh;
+    height: 70vh;
     /* filter: brightness(44%); */
     background-position: center center;
     background-size: max(1200px, 100vw);
@@ -18,8 +22,8 @@
 }
 
 .main .box {
-    background-color: rgba(0, 0, 0, 0.44);
-    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 70vh;
     position: absolute;
     top: 0;
     width: 100%;
@@ -31,12 +35,12 @@
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    height: 62px;
+    height: 70px;
 }
 
 nav img {
     color: red;
-    width: 114px;
+    width: 130px;
     position: relative;
     z-index: 1;
 }
@@ -46,36 +50,181 @@ nav button {
     z-index: 1;
 }
 
-.hero{
+.hero {
     position: relative;
-     font-family: "Martel Sans", sans-serif;
-     font-weight: 600;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 600;
     color: white;
     justify-content: center;
-    height: 100%;
+    height: calc(100% - 62px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50;
+    gap: 23px;
+    padding: 30px;
 }
 
-.hero :first-child{
+.hero> :nth-child(1) {
     font-size: 56px;
+    text-align: center;
     font-weight: 900;
 
 }
 
-.hero :nth-child(2){
-    margin-top: 10px;
-    margin-bottom: 30px;
+.hero> :nth-child(2) {
     font-size: 20px;
+    text-align: center;
     font-weight: 500;
 }
-.hero :nth-child(3){
+
+.hero> :nth-child(3) {
     font-size: 16px;
-    font-weight: 4  00;
+    text-align: center;
+    font-weight: 400;
 }
 
-.email button{
+.divider {
+    background-color: rgb(62, 61, 61);
+    height: 6px;
+}
+
+.hero-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn {
+    padding: 4px 10px;
+    font-weight: 400;
+    border-radius: 4px;
+    border: 1px solid white;
+    background-color: rgba(248, 243, 243, 0.021);
+    color: white;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    border: 1px solid rgb(70, 69, 69);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 9px 35px;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    border: 1px solid rgb(70, 69, 69);
+}
+
+.main input {
+    background-color: rgba(23, 23, 23, 0.6);
+    padding: 8px 100px 8px 14px;
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(246, 243, 243, 0.5);
+    ;
+}
+
+.first {
+    display: flex;
+    width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.secImg {
+    position: relative;
+    margin: 6px;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    right: 1px;
+    top: 51px;
+}
+
+.first>div {
+    display: flex;
+    flex-direction: column;
+    /* padding: 34px 0; */
+}
+
+.first>div :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first>div :nth-child(2) {
     font-size: 24px;
+}
+
+.faq {
+    color: white;
+    padding: 34px;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 48px;
+}
+
+.faqBox>svg {
+    filter: invert(1);
+}
+
+.faqBox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 70vw;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.faqBox:hover {
+    background-color: #414141;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
 }
